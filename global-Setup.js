@@ -4,6 +4,7 @@ async function globalSetup() {
   const browser = await chromium.launch();
   const page = await browser.newPage();
   await page.goto(`${process.env.BASE_URL}login`);
+  console.log(`${process.env.BASE_URL}login`);
   await page.fill("#email", process.env.LOGIN_EMAIL);
   await page.fill("#password", process.env.LOGIN_PASSWORD);
   await page.click("#login-btn");
