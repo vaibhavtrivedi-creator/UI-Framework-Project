@@ -1,0 +1,25 @@
+1
+Name must be at least 2 chars
+Enter a valid email
+Enter a valid 10-digit phone
+Price Value: 1500
+Expected Price: 6000
+Total Price Value: 6000
+Event Details
+Event : World Tech Summit
+Category : Conference
+Date : Saturday, 18 April 2026
+Venue : Hyderabad, Hitech city
+City : Hyderabad
+Customer Details
+Name : Vaibhy
+Email : vaibhavesprit@gmail.com
+Phone : 1234567890
+Payment Summary
+Tickets : 4
+Price per ticket : $1,500
+Total Paid : $6,000
+Refund
+Booking Information
+Booked on : Monday, 13 July 2026
+Booking ID : #82583
