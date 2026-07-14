@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      BASE_URL: ${{secrets.BASE_URL}}
-      LOGIN_EMAIL: ${{secrets.LOGIN_EMAIL}}
-      LOGIN_PASSWORD: ${{secrets.LOGIN_PASSWORD}}
+      BASE_URL: ${{vars.BASE_URL}}
+      LOGIN_EMAIL: ${{vars.LOGIN_EMAIL}}
+      LOGIN_PASSWORD: ${{vars.LOGIN_PASSWORD}}
 
     steps:
       - uses: actions/checkout@v4
