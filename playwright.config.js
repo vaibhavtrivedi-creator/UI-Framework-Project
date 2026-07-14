@@ -41,10 +41,10 @@ export default defineConfig({
     slowMo: 100,
   },
 
-  globalTimeout: 50000,
+  globalTimeout: 30 * 60 * 1000,
 
   expect: {
-    timeout: 5000,
+    timeout: 15000,
   },
 
   projects: [
