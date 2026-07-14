@@ -1,4 +1,4 @@
-const { chromium } = require("@playwright/test");
+const { chromium, expect } = require("@playwright/test");
 
 async function globalSetup() {
   const browser = await chromium.launch();
