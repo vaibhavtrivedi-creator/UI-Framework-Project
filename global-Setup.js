@@ -9,7 +9,9 @@ async function globalSetup() {
   await page.fill("#email", process.env.LOGIN_EMAIL);
   await page.fill("#password", process.env.LOGIN_PASSWORD);
   await page.click("#login-btn");
-  await page.waitForNavigation({ waitUntil: "networkidle" });
+  await expect(
+    await page.getByRole("button", { name: "Logout" }),
+  ).toBeVisible();
   await page.context().storageState({ path: "storageState.json" });
   await browser.close();
 }
