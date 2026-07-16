@@ -25,7 +25,16 @@ export default defineConfig({
 
   globalSetup: "./global-Setup.js",
 
-  reporter: [["html"], ["line"], ["allure-playwright"]],
+  reporter: [
+    ["html"],
+    ["line"],
+    [
+      "allure-playwright",
+      {
+        outputFolder: "allure-results",
+      },
+    ],
+  ],
 
   use: {
     browserName: "chromium",
