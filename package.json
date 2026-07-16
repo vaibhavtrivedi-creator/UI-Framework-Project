@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    " bookingEvent": "npx playwwright test event.spec.js "
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
