@@ -25,8 +25,12 @@ class EventPage {
       await expect(eventCardText.toLowerCase()).toContain(
         searchText.toLowerCase(),
       );
-      await this.bookNowButton.click();
-      break;
+      if ((await this.bookNowButton.textContent()) === "Book Now") {
+        await this.bookNowButton.click();
+        break;
+      } else {
+        console.log("All event's tickets are sold out.");
+      }
     }
   }
 }
